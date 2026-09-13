@@ -1,0 +1,5540 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ramraj Kirana Store</title>
+
+
+<style>
+
+/* =====================================================
+   RAMRAJ KIRANA STORE
+   PREMIUM WEBSITE
+   CREATED BY YUVI
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+:root{
+
+    --green:#08783f;
+    --dark-green:#045b2d;
+    --light-green:#eaf8f0;
+
+    --yellow:#ffd329;
+    --orange:#ff8a00;
+
+    --red:#ed3838;
+
+    --dark:#17231c;
+    --gray:#707871;
+
+    --white:#ffffff;
+
+    --background:#f5f8f6;
+}
+
+
+body{
+
+    background:var(--background);
+
+    color:var(--dark);
+
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.top-bar{
+
+    background:#064d2a;
+
+    color:white;
+
+    padding:8px 6%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:13px;
+
+}
+
+
+.top-left{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+
+.top-right{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+
+    height:80px;
+
+    background:white;
+
+    padding:0 6%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    box-shadow:0 3px 20px rgba(0,0,0,.08);
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:var(--dark);
+
+}
+
+
+.logo-circle{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #0aa657,
+        #05652f
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:31px;
+
+    border:3px solid #d8f2e1;
+
+    box-shadow:
+
+    0 5px 15px
+    rgba(0,0,0,.15);
+
+}
+
+
+.logo-text h1{
+
+    color:var(--green);
+
+    font-size:21px;
+
+    font-weight:800;
+
+}
+
+
+.logo-text span{
+
+    font-size:10px;
+
+    color:#777;
+
+    letter-spacing:2px;
+
+}
+
+
+/* NAV */
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+}
+
+
+nav a{
+
+    color:#333;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:var(--green);
+
+}
+
+
+.header-cart{
+
+    border:none;
+
+    background:var(--green);
+
+    color:white;
+
+    padding:11px 17px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+}
+
+
+#cartCount{
+
+    background:var(--yellow);
+
+    color:#222;
+
+    border-radius:50%;
+
+    padding:2px 7px;
+
+    margin-left:4px;
+
+}
+
+
+/* MOBILE MENU */
+
+.menu{
+
+    display:none;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    min-height:580px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:50px 7%;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        rgba(0,45,24,.90),
+        rgba(0,55,30,.42)
+    ),
+
+    url("https://khatabook-assets.s3.amazonaws.com/media/post/5gB_sMvwavcDxq60EL-LIobryUCqgtFEe9mvlZPPEFti7Iwv2Gp8GwzjjvkZHb4EpTqmVEcpfZ7oBJO8NWorrpuL3Pkt1U8BxTln7RddVkwheSJpbU1KRGXcvJHLS155FmIcbnYNeUE5uqW_XW9T6Sw.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+
+.hero-content{
+
+    max-width:690px;
+
+}
+
+
+.badge{
+
+    display:inline-block;
+
+    padding:9px 18px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.15);
+
+    border:
+    1px solid
+    rgba(255,255,255,.3);
+
+    backdrop-filter:blur(8px);
+
+    font-size:13px;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero h2{
+
+    font-size:57px;
+
+    line-height:1.15;
+
+    font-weight:800;
+
+}
+
+
+.hero h2 span{
+
+    color:var(--yellow);
+
+}
+
+
+.hero p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#eee;
+
+    margin:20px 0 30px;
+
+    max-width:620px;
+
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.hero-btn{
+
+    padding:14px 27px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.shop-btn{
+
+    background:var(--yellow);
+
+    color:#222;
+
+}
+
+
+.shop-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 8px 20px
+    rgba(255,211,41,.4);
+
+}
+
+
+.contact-btn{
+
+    background:white;
+
+    color:var(--green);
+
+}
+
+
+.contact-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search-area{
+
+    background:white;
+
+    padding:28px 6%;
+
+}
+
+
+.search-wrapper{
+
+    max-width:850px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    border:2px solid #e0e5e1;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    background:white;
+
+    box-shadow:
+    0 5px 20px
+    rgba(0,0,0,.05);
+
+}
+
+
+.search-icon{
+
+    font-size:21px;
+
+    margin-left:20px;
+
+}
+
+
+.search-wrapper input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    padding:17px;
+
+    font-size:15px;
+
+}
+
+
+.search-wrapper button{
+
+    width:65px;
+
+    height:52px;
+
+    border:none;
+
+    background:var(--green);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
+
+
+/* =====================================================
+   GENERAL SECTION
+===================================================== */
+
+section{
+
+    padding:70px 6%;
+
+}
+
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+.small-title{
+
+    color:var(--green);
+
+    font-weight:700;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+
+.section-heading h2{
+
+    font-size:35px;
+
+    margin:7px 0;
+
+}
+
+
+.section-heading p{
+
+    color:var(--gray);
+
+}
+
+
+/* =====================================================
+   CATEGORIES
+===================================================== */
+
+.categories{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(140px,1fr));
+
+    gap:20px;
+
+}
+
+
+.category{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:27px 12px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    border:1px solid #edf0ee;
+
+    transition:.35s;
+
+}
+
+
+.category:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#bce8cc;
+
+    box-shadow:
+    0 15px 30px
+    rgba(0,0,0,.09);
+
+}
+
+
+.category-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto auto 13px;
+
+    border-radius:50%;
+
+    background:var(--light-green);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:35px;
+
+}
+
+
+.category h3{
+
+    font-size:14px;
+
+}
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.products-section{
+
+    background:#f7faf8;
+
+}
+
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:23px;
+
+}
+
+
+.product{
+
+    background:white;
+
+    border-radius:19px;
+
+    overflow:hidden;
+
+    border:1px solid #edf0ee;
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+
+.product:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+    0 15px 35px
+    rgba(0,0,0,.10);
+
+}
+
+
+.product-img{
+
+    width:100%;
+
+    height:185px;
+
+    object-fit:cover;
+
+}
+
+
+.product-info{
+
+    padding:17px;
+
+}
+
+
+.product-category{
+
+    color:var(--green);
+
+    font-size:10px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+
+.product h3{
+
+    font-size:17px;
+
+    margin:5px 0;
+
+}
+
+
+.product-description{
+
+    color:#777;
+
+    font-size:12px;
+
+}
+
+
+.product-bottom{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-top:13px;
+
+}
+
+
+.price{
+
+    color:var(--green);
+
+    font-size:20px;
+
+    font-weight:800;
+
+}
+
+
+.price small{
+
+    color:#888;
+
+    font-size:10px;
+
+    font-weight:400;
+
+}
+
+
+.add-btn{
+
+    border:none;
+
+    background:var(--green);
+
+    color:white;
+
+    padding:9px 14px;
+
+    border-radius:9px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.add-btn:hover{
+
+    background:var(--dark-green);
+
+}
+
+
+.offer-tag{
+
+    position:absolute;
+
+    top:12px;
+
+    left:12px;
+
+    background:var(--red);
+
+    color:white;
+
+    padding:5px 10px;
+
+    border-radius:20px;
+
+    font-size:9px;
+
+    font-weight:700;
+
+}
+
+
+/* =====================================================
+   OFFER
+===================================================== */
+
+.offer-section{
+
+    padding-top:30px;
+
+}
+
+
+.offer-box{
+
+    border-radius:30px;
+
+    padding:55px;
+
+    color:white;
+
+    background:
+
+    linear-gradient(
+        120deg,
+        #075d31,
+        #0aa75a
+    );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.offer-box:after{
+
+    content:"🛒";
+
+    position:absolute;
+
+    right:60px;
+
+    bottom:-35px;
+
+    font-size:170px;
+
+    opacity:.08;
+
+}
+
+
+.offer-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+.offer-content h2{
+
+    font-size:36px;
+
+}
+
+
+.offer-content p{
+
+    margin:8px 0 20px;
+
+    color:#dff8e9;
+
+}
+
+
+.offer-btn{
+
+    display:inline-block;
+
+    background:var(--yellow);
+
+    color:#222;
+
+    padding:12px 24px;
+
+    border-radius:25px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+
+/* =====================================================
+   WHY US
+===================================================== */
+
+.why-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.why-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 5px 20px
+    rgba(0,0,0,.05);
+
+}
+
+
+.why-icon{
+
+    font-size:40px;
+
+    margin-bottom:12px;
+
+}
+
+
+.why-card h3{
+
+    font-size:16px;
+
+    margin-bottom:7px;
+
+}
+
+
+.why-card p{
+
+    color:#777;
+
+    font-size:12px;
+
+    line-height:1.7;
+
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about{
+
+    background:white;
+
+}
+
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:55px;
+
+    align-items:center;
+
+}
+
+
+.about-img{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+}
+
+
+.about-content h2{
+
+    font-size:38px;
+
+    margin:8px 0 18px;
+
+}
+
+
+.about-content p{
+
+    color:#707770;
+
+    line-height:1.9;
+
+}
+
+
+.about-list{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+    margin-top:25px;
+
+}
+
+
+.about-list div{
+
+    background:#eef9f2;
+
+    color:var(--green);
+
+    padding:12px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+
+    background:#f5f8f6;
+
+}
+
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:25px;
+
+}
+
+
+.contact-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 7px 25px
+    rgba(0,0,0,.05);
+
+}
+
+
+.contact-info{
+
+    display:flex;
+
+    gap:15px;
+
+    margin:22px 0;
+
+}
+
+
+.contact-icon{
+
+    width:48px;
+
+    height:48px;
+
+    flex-shrink:0;
+
+    border-radius:50%;
+
+    background:var(--light-green);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+}
+
+
+.contact-info strong{
+
+    display:block;
+
+    margin-bottom:4px;
+
+}
+
+
+.contact-info p{
+
+    color:#777;
+
+    font-size:13px;
+
+}
+
+
+.form input,
+.form textarea{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    margin-bottom:14px;
+
+}
+
+
+.form textarea{
+
+    height:120px;
+
+    resize:none;
+
+}
+
+
+.form button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    background:var(--green);
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+}
+
+
+/* =====================================================
+   CART OVERLAY
+===================================================== */
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,.45);
+
+    display:none;
+
+    z-index:1999;
+
+}
+
+
+.overlay.active{
+
+    display:block;
+
+}
+
+
+/* =====================================================
+   CART
+===================================================== */
+
+.cart{
+
+    position:fixed;
+
+    top:0;
+
+    right:-450px;
+
+    width:420px;
+
+    max-width:100%;
+
+    height:100vh;
+
+    background:white;
+
+    z-index:2000;
+
+    padding:25px;
+
+    transition:.4s;
+
+    overflow-y:auto;
+
+    box-shadow:
+    -10px 0 35px
+    rgba(0,0,0,.2);
+
+}
+
+
+.cart.active{
+
+    right:0;
+
+}
+
+
+.cart-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding-bottom:17px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+.close-cart{
+
+    width:36px;
+
+    height:36px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+}
+
+
+.cart-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    padding:17px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+.cart-item h4{
+
+    font-size:14px;
+
+}
+
+
+.cart-item-price{
+
+    color:var(--green);
+
+    font-weight:700;
+
+}
+
+
+.quantity{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+.quantity button{
+
+    width:27px;
+
+    height:27px;
+
+    border:none;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+
+.delete{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+}
+
+
+.cart-total{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:21px;
+
+    font-weight:800;
+
+}
+
+
+.whatsapp-order{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#25d366;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+}
+
+
+/* =====================================================
+   FLOATING SOCIAL BUTTONS
+===================================================== */
+
+.social-buttons{
+
+    position:fixed;
+
+    right:22px;
+
+    bottom:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    z-index:1500;
+
+}
+
+
+.social-btn{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:25px;
+
+    box-shadow:
+    0 7px 20px
+    rgba(0,0,0,.20);
+
+    transition:.3s;
+
+}
+
+
+.social-btn:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+.whatsapp{
+
+    background:#25d366;
+
+}
+
+
+.instagram{
+
+    background:
+    linear-gradient(
+        45deg,
+        #f9ce34,
+        #ee2a7b,
+        #6228d7
+    );
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    background:#10251a;
+
+    color:white;
+
+    padding:60px 6% 20px;
+
+}
+
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    2fr 1fr 1fr 1.3fr;
+
+    gap:35px;
+
+}
+
+
+.footer-brand h2{
+
+    margin-bottom:12px;
+
+}
+
+
+.footer-brand p{
+
+    color:#aebbb3;
+
+    font-size:13px;
+
+    line-height:1.8;
+
+}
+
+
+.footer-column h3{
+
+    margin-bottom:15px;
+
+}
+
+
+.footer-column a{
+
+    display:block;
+
+    color:#adb9b1;
+
+    text-decoration:none;
+
+    margin:8px 0;
+
+    font-size:13px;
+
+}
+
+
+.footer-column a:hover{
+
+    color:white;
+
+}
+
+
+.footer-social{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:19px;
+
+}
+
+
+.footer-wa{
+
+    background:#25d366;
+
+}
+
+
+.footer-ig{
+
+    background:
+    linear-gradient(
+        45deg,
+        #f9ce34,
+        #ee2a7b,
+        #6228d7
+    );
+
+}
+
+
+.footer-bottom{
+
+    margin-top:45px;
+
+    padding-top:20px;
+
+    border-top:1px solid #294033;
+
+    text-align:center;
+
+    color:#9daaa2;
+
+    font-size:12px;
+
+}
+
+
+.footer-bottom strong{
+
+    color:var(--yellow);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:950px){
+
+    .why-grid{
+
+        grid-template-columns:
+        1fr 1fr;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:
+        1fr 1fr;
+
+    }
+
+}
+
+
+@media(max-width:750px){
+
+    .top-bar{
+
+        display:none;
+
+    }
+
+
+    header{
+
+        height:70px;
+
+    }
+
+
+    .menu{
+
+        display:block;
+
+    }
+
+
+    nav{
+
+        display:none;
+
+        position:absolute;
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        background:white;
+
+        padding:20px;
+
+        flex-direction:column;
+
+        box-shadow:
+        0 10px 20px
+        rgba(0,0,0,.1);
+
+    }
+
+
+    nav.active{
+
+        display:flex;
+
+    }
+
+
+    .hero{
+
+        min-height:510px;
+
+        padding:45px 6%;
+
+    }
+
+
+    .hero h2{
+
+        font-size:39px;
+
+    }
+
+
+    .hero p{
+
+        font-size:14px;
+
+    }
+
+
+    .about-grid,
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .offer-box{
+
+        padding:40px 25px;
+
+    }
+
+
+    .why-grid{
+
+        grid-template-columns:
+        1fr 1fr;
+
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    section{
+
+        padding:55px 5%;
+
+    }
+
+
+    .logo-circle{
+
+        width:45px;
+
+        height:45px;
+
+        font-size:23px;
+
+    }
+
+
+    .logo-text h1{
+
+        font-size:17px;
+
+    }
+
+
+    .hero h2{
+
+        font-size:32px;
+
+    }
+
+
+    .product-grid{
+
+        grid-template-columns:
+        1fr 1fr;
+
+        gap:12px;
+
+    }
+
+
+    .product-img{
+
+        height:135px;
+
+    }
+
+
+    .product-info{
+
+        padding:12px;
+
+    }
+
+
+    .product h3{
+
+        font-size:14px;
+
+    }
+
+
+    .product-bottom{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:8px;
+
+    }
+
+
+    .add-btn{
+
+        width:100%;
+
+    }
+
+
+    .why-grid,
+    .about-list,
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:28px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+
+<div class="top-left">
+
+<span>📞 +91 9313587349</span>
+
+<span>✉️ ramrajkirana@gmail.com</span>
+
+</div>
+
+
+<div class="top-right">
+
+<span>🕐 Open 7:00 AM - 10:00 PM</span>
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+
+<a href="#home" class="logo">
+
+<div class="logo-circle">
+
+🛒
+
+</div>
+
+
+<div class="logo-text">
+
+<h1>Ramraj Kirana</h1>
+
+<span>QUALITY • TRUST • SERVICE</span>
+
+</div>
+
+</a>
+
+
+
+<div class="menu"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+
+<nav id="nav">
+
+<a href="#home">Home</a>
+
+<a href="#categories">Categories</a>
+
+<a href="#products">Products</a>
+
+<a href="#offers">Offers</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+
+<button
+class="header-cart"
+onclick="openCart()">
+
+🛒 Cart
+
+<span id="cartCount">0</span>
+
+</button>
+
+</nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero" id="home">
+
+
+<div class="hero-content">
+
+
+<div class="badge">
+
+🌟 Your Trusted Neighborhood Store
+
+</div>
+
+
+<h2>
+
+Your Daily Needs,
+
+<br>
+
+<span>All In One Place.</span>
+
+</h2>
+
+
+<p>
+<b>HARDIKSINH CHUDASMA</b>
+Welcome to Ramraj Kirana Store.
+Shop groceries, rice, dal, atta, oil,
+masala, snacks, beverages, dairy,
+personal care and household essentials.
+
+</p>
+
+
+<div class="hero-buttons">
+
+
+<a
+href="#products"
+class="hero-btn shop-btn">
+
+🛍️ Shop Now
+
+</a>
+
+
+<a
+href="#contact"
+class="hero-btn contact-btn">
+
+📞 Contact Us
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SEARCH
+===================================================== -->
+
+<div class="search-area">
+
+
+<div class="search-wrapper">
+
+
+<span class="search-icon">
+
+🔍
+
+</span>
+
+
+<input
+id="search"
+type="text"
+placeholder="Search rice, atta, dal, oil, biscuit, soap..."
+onkeyup="searchProducts()">
+
+
+<button>
+
+→
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================================
+     CATEGORIES
+===================================================== -->
+
+<section id="categories">
+
+
+<div class="section-heading">
+
+<div class="small-title">
+
+SHOP BY CATEGORY
+
+</div>
+
+
+<h2>
+
+Explore Our Categories
+
+</h2>
+
+
+<p>
+
+Find everything you need for your home.
+
+</p>
+
+</div>
+
+
+
+<div class="categories">
+
+
+<div
+class="category"
+onclick="filterCategory('all')">
+
+<div class="category-icon">
+
+🛒
+
+</div>
+
+<h3>All Items</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('rice')">
+
+<div class="category-icon">
+
+🌾
+
+</div>
+
+<h3>Rice & Atta</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('dal')">
+
+<div class="category-icon">
+
+🫘
+
+</div>
+
+<h3>Dal & Pulses</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('oil')">
+
+<div class="category-icon">
+
+🫗
+
+</div>
+
+<h3>Oil & Ghee</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('masala')">
+
+<div class="category-icon">
+
+🌶️
+
+</div>
+
+<h3>Masala</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('snacks')">
+
+<div class="category-icon">
+
+🍪
+
+</div>
+
+<h3>Snacks</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('drink')">
+
+<div class="category-icon">
+
+🥤
+
+</div>
+
+<h3>Beverages</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('dairy')">
+
+<div class="category-icon">
+
+🥛
+
+</div>
+
+<h3>Dairy</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('personal')">
+
+<div class="category-icon">
+
+🧴
+
+</div>
+
+<h3>Personal Care</h3>
+
+</div>
+
+
+
+<div
+class="category"
+onclick="filterCategory('cleaning')">
+
+<div class="category-icon">
+
+🧹
+
+</div>
+
+<h3>Cleaning</h3>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRODUCTS
+===================================================== -->
+
+<section
+class="products-section"
+id="products">
+
+
+<div class="section-heading">
+
+<div class="small-title">
+
+OUR PRODUCTS
+
+</div>
+
+
+<h2>
+
+Popular Kirana Items
+
+</h2>
+
+
+<p>
+
+Add your favorite products to your cart.
+
+</p>
+
+</div>
+
+
+
+<div
+class="product-grid"
+id="productGrid">
+
+
+
+<!-- PRODUCT 1 -->
+
+<div
+class="product"
+data-category="rice"
+data-name="basmati rice">
+
+<span class="offer-tag">
+
+POPULAR
+
+</span>
+
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Rice & Atta
+
+</div>
+
+<h3>
+
+Basmati Rice
+
+</h3>
+
+<p class="product-description">
+
+Premium Quality • 5 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹450
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Basmati Rice',450)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 2 -->
+
+<div
+class="product"
+data-category="rice"
+data-name="wheat atta">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Rice & Atta
+
+</div>
+
+<h3>
+
+Wheat Atta
+
+</h3>
+
+<p class="product-description">
+
+Chakki Fresh Atta • 5 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹260
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Wheat Atta',260)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 3 -->
+
+<div
+class="product"
+data-category="rice"
+data-name="sona masoori rice">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Rice
+
+</div>
+
+<h3>
+
+Sona Masoori Rice
+
+</h3>
+
+<p class="product-description">
+
+Daily Use Rice • 5 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹320
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Sona Masoori Rice',320)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 4 -->
+
+<div
+class="product"
+data-category="rice"
+data-name="poha">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Rice Products
+
+</div>
+
+<h3>
+
+Poha
+
+</h3>
+
+<p class="product-description">
+
+Thick Poha • 1 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹70
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Poha',70)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 5 -->
+
+<div
+class="product"
+data-category="dal"
+data-name="toor dal">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1515543904379-3d757afe72e4?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Dal & Pulses
+
+</div>
+
+<h3>
+
+Toor Dal
+
+</h3>
+
+<p class="product-description">
+
+Premium Dal • 1 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹160
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Toor Dal',160)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 6 -->
+
+<div
+class="product"
+data-category="dal"
+data-name="moong dal">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1585996782871-1b0b9a9a8d68?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Dal & Pulses
+
+</div>
+
+<h3>
+
+Moong Dal
+
+</h3>
+
+<p class="product-description">
+
+Clean & Fresh • 1 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹145
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Moong Dal',145)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 7 -->
+
+<div
+class="product"
+data-category="dal"
+data-name="chana dal">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Dal & Pulses
+
+</div>
+
+<h3>
+
+Chana Dal
+
+</h3>
+
+<p class="product-description">
+
+Fresh Chana Dal • 1 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹95
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Chana Dal',95)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 8 -->
+
+<div
+class="product"
+data-category="dal"
+data-name="masoor dal">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1585996782871-1b0b9a9a8d68?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Dal & Pulses
+
+</div>
+
+<h3>
+
+Masoor Dal
+
+</h3>
+
+<p class="product-description">
+
+Fresh Masoor • 1 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹110
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Masoor Dal',110)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 9 -->
+
+<div
+class="product"
+data-category="oil"
+data-name="sunflower oil">
+
+<span class="offer-tag">
+
+DEAL
+
+</span>
+
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Oil & Ghee
+
+</div>
+
+<h3>
+
+Sunflower Oil
+
+</h3>
+
+<p class="product-description">
+
+Cooking Oil • 1 L
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹145
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Sunflower Oil',145)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 10 -->
+
+<div
+class="product"
+data-category="oil"
+data-name="mustard oil">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Oil & Ghee
+
+</div>
+
+<h3>
+
+Mustard Oil
+
+</h3>
+
+<p class="product-description">
+
+Pure Cooking Oil • 1 L
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹170
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Mustard Oil',170)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 11 -->
+
+<div
+class="product"
+data-category="oil"
+data-name="desi ghee">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1631209121757-a5f2f9f5f4b4?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Oil & Ghee
+
+</div>
+
+<h3>
+
+Desi Ghee
+
+</h3>
+
+<p class="product-description">
+
+Pure Ghee • 1 L
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹650
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Desi Ghee',650)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 12 -->
+
+<div
+class="product"
+data-category="oil"
+data-name="groundnut oil">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Oil
+
+</div>
+
+<h3>
+
+Groundnut Oil
+
+</h3>
+
+<p class="product-description">
+
+Cooking Oil • 1 L
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹180
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Groundnut Oil',180)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 13 -->
+
+<div
+class="product"
+data-category="masala"
+data-name="turmeric haldi">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Masala
+
+</div>
+
+<h3>
+
+Turmeric Powder
+
+</h3>
+
+<p class="product-description">
+
+Haldi • 200 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹55
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Turmeric Powder',55)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 14 -->
+
+<div
+class="product"
+data-category="masala"
+data-name="red chilli powder">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Masala
+
+</div>
+
+<h3>
+
+Red Chilli Powder
+
+</h3>
+
+<p class="product-description">
+
+Mirchi • 200 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹65
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Red Chilli Powder',65)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 15 -->
+
+<div
+class="product"
+data-category="masala"
+data-name="garam masala">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Masala
+
+</div>
+
+<h3>
+
+Garam Masala
+
+</h3>
+
+<p class="product-description">
+
+Premium Masala • 100 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹75
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Garam Masala',75)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 16 -->
+
+<div
+class="product"
+data-category="masala"
+data-name="salt">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1599909533608-39d9c2d0e6f7?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Daily Grocery
+
+</div>
+
+<h3>
+
+Table Salt
+
+</h3>
+
+<p class="product-description">
+
+Iodized Salt • 1 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹25
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Table Salt',25)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 17 -->
+
+<div
+class="product"
+data-category="snacks"
+data-name="biscuits">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Snacks
+
+</div>
+
+<h3>
+
+Biscuits
+
+</h3>
+
+<p class="product-description">
+
+Crispy Biscuits • Pack
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹30
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Biscuits',30)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 18 -->
+
+<div
+class="product"
+data-category="snacks"
+data-name="namkeen">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1599599810694-57a0f3b3e6f0?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Snacks
+
+</div>
+
+<h3>
+
+Namkeen
+
+</h3>
+
+<p class="product-description">
+
+Crunchy Mix • 200 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹60
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Namkeen',60)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 19 -->
+
+<div
+class="product"
+data-category="snacks"
+data-name="potato chips">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Snacks
+
+</div>
+
+<h3>
+
+Potato Chips
+
+</h3>
+
+<p class="product-description">
+
+Crispy Chips • Pack
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹50
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Potato Chips',50)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 20 -->
+
+<div
+class="product"
+data-category="snacks"
+data-name="cookies">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Snacks
+
+</div>
+
+<h3>
+
+Cookies
+
+</h3>
+
+<p class="product-description">
+
+Chocolate Cookies • Pack
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹70
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Cookies',70)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 21 -->
+
+<div
+class="product"
+data-category="drink"
+data-name="cold drink">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Beverages
+
+</div>
+
+<h3>
+
+Cold Drink
+
+</h3>
+
+<p class="product-description">
+
+Refreshing • 750 ML
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹45
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Cold Drink',45)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 22 -->
+
+<div
+class="product"
+data-category="drink"
+data-name="tea">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Beverages
+
+</div>
+
+<h3>
+
+Tea
+
+</h3>
+
+<p class="product-description">
+
+Premium Tea • 250 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹140
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Tea',140)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 23 -->
+
+<div
+class="product"
+data-category="drink"
+data-name="coffee">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Beverages
+
+</div>
+
+<h3>
+
+Coffee
+
+</h3>
+
+<p class="product-description">
+
+Instant Coffee • 100 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹180
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Coffee',180)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 24 -->
+
+<div
+class="product"
+data-category="dairy"
+data-name="milk">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Dairy
+
+</div>
+
+<h3>
+
+Fresh Milk
+
+</h3>
+
+<p class="product-description">
+
+Fresh Milk • 1 L
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹65
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Fresh Milk',65)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 25 -->
+
+<div
+class="product"
+data-category="dairy"
+data-name="butter">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Dairy
+
+</div>
+
+<h3>
+
+Butter
+
+</h3>
+
+<p class="product-description">
+
+Creamy Butter • 500 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹280
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Butter',280)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 26 -->
+
+<div
+class="product"
+data-category="personal"
+data-name="shampoo">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Personal Care
+
+</div>
+
+<h3>
+
+Shampoo
+
+</h3>
+
+<p class="product-description">
+
+Daily Care • 180 ML
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹120
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Shampoo',120)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 27 -->
+
+<div
+class="product"
+data-category="personal"
+data-name="soap">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1607006483225-5b5d4f3c4b7b?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Personal Care
+
+</div>
+
+<h3>
+
+Bath Soap
+
+</h3>
+
+<p class="product-description">
+
+Fresh Fragrance • 100 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹40
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Bath Soap',40)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 28 -->
+
+<div
+class="product"
+data-category="personal"
+data-name="toothpaste">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1559591937-e5f9f6c5c9b9?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Personal Care
+
+</div>
+
+<h3>
+
+Toothpaste
+
+</h3>
+
+<p class="product-description">
+
+Dental Care • 150 GM
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹95
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Toothpaste',95)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 29 -->
+
+<div
+class="product"
+data-category="cleaning"
+data-name="detergent">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1585832770485-e68a5dbfad52?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Cleaning
+
+</div>
+
+<h3>
+
+Detergent Powder
+
+</h3>
+
+<p class="product-description">
+
+Powerful Cleaning • 1 KG
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹110
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Detergent Powder',110)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- PRODUCT 30 -->
+
+<div
+class="product"
+data-category="cleaning"
+data-name="dishwash">
+
+<img
+class="product-img"
+src="https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=700&q=90">
+
+
+<div class="product-info">
+
+<div class="product-category">
+
+Cleaning
+
+</div>
+
+<h3>
+
+Dishwash Liquid
+
+</h3>
+
+<p class="product-description">
+
+Kitchen Cleaning • 500 ML
+
+</p>
+
+
+<div class="product-bottom">
+
+<div class="price">
+
+₹90
+
+</div>
+
+
+<button
+class="add-btn"
+onclick="addToCart('Dishwash Liquid',90)">
+
++ Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     OFFER
+===================================================== -->
+
+<section
+class="offer-section"
+id="offers">
+
+
+<div class="offer-box">
+
+
+<div class="offer-content">
+
+
+<div class="small-title"
+style="color:#ffd329;">
+
+SPECIAL OFFER
+
+</div>
+
+
+<h2>
+
+Fresh Grocery. Better Prices. 🔥
+
+</h2>
+
+
+<p>
+
+Shop your daily essentials from Ramraj Kirana Store.
+
+</p>
+
+
+<a
+href="#products"
+class="offer-btn">
+
+View Products
+
+</a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHY US
+===================================================== -->
+
+<section>
+
+
+<div class="section-heading">
+
+<div class="small-title">
+
+WHY RAMRAJ?
+
+</div>
+
+
+<h2>
+
+Why Choose Our Store?
+
+</h2>
+
+
+<p>
+
+We value every customer.
+
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<div class="why-icon">
+
+🌟
+
+</div>
+
+<h3>
+
+Quality Products
+
+</h3>
+
+<p>
+
+Quality daily-use products for your family.
+
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+
+💰
+
+</div>
+
+<h3>
+
+Best Prices
+
+</h3>
+
+<p>
+
+Reasonable prices on everyday essentials.
+
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+
+🤝
+
+</div>
+
+<h3>
+
+Trusted Service
+
+</h3>
+
+<p>
+
+Friendly service and customer satisfaction.
+
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+
+📱
+
+</div>
+
+<h3>
+
+Easy Ordering
+
+</h3>
+
+<p>
+
+Order easily through WhatsApp.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+class="about"
+id="about">
+
+
+<div class="about-grid">
+
+
+<img
+class="about-img"
+src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?auto=format&fit=crop&w=1000&q=90">
+
+
+<div class="about-content">
+
+
+<div class="small-title">
+
+ABOUT RAMRAJ KIRANA
+
+</div>
+
+
+<h2>
+
+Your Local Grocery Partner 🛒
+
+</h2>
+
+
+<p>
+
+Welcome to Ramraj Kirana Store.
+We provide everyday grocery and household
+products at reasonable prices. Our goal is to
+make your daily shopping simple, convenient
+and trustworthy.
+
+</p>
+
+
+<div class="about-list">
+
+<div>✓ Quality Products</div>
+
+<div>✓ Best Prices</div>
+
+<div>✓ Friendly Service</div>
+
+<div>✓ Daily Essentials</div>
+
+<div>✓ Easy Ordering</div>
+
+<div>✓ Customer Trust</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+class="contact"
+id="contact">
+
+
+<div class="section-heading">
+
+<div class="small-title">
+
+CONTACT US
+
+</div>
+
+
+<h2>
+
+Visit Or Contact Us
+
+</h2>
+
+
+<p>
+
+We are always happy to help.
+
+</p>
+
+</div>
+
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+
+<h2>
+
+Ramraj Kirana Store
+
+</h2>
+
+
+
+<div class="contact-info">
+
+<div class="contact-icon">
+
+📍
+
+</div>
+
+
+<div>
+
+<strong>
+
+<b>DILHICHAKLA SURABAGA ROAD 388550</b>
+
+</strong>
+
+<p>
+
+SURABAGA ROAD 
+RAMRAJ KIRANA STORE
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-info">
+
+<div class="contact-icon">
+
+📞
+
+</div>
+
+
+<div>
+
+<strong>
+
+Phone
+
+</strong>
+
+<p>
+
++91 9313587349
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-info">
+
+<div class="contact-icon">
+
+🕐
+
+</div>
+
+
+<div>
+
+<strong>
+
+Opening Hours
+
+</strong>
+
+<p>
+
+7:00 AM - 10:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="contact-info">
+
+<div class="contact-icon">
+
+📧
+
+</div>
+
+
+<div>
+
+<strong>
+
+Email
+
+</strong>
+
+<p>
+
+ramrajkirana@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="contact-card form">
+
+
+<h2>
+
+Send Message
+
+</h2>
+
+
+<br>
+
+
+<input
+id="customerName"
+type="text"
+placeholder="Your Name">
+
+
+<input
+id="customerPhone"
+type="tel"
+placeholder="Mobile Number">
+
+
+<textarea
+id="customerMessage"
+placeholder="Your Message"></textarea>
+
+
+<button
+onclick="sendMessage()">
+
+💬 Send On WhatsApp
+
+</button>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CART OVERLAY
+===================================================== -->
+
+<div
+class="overlay"
+id="overlay"
+onclick="closeCart()">
+
+</div>
+
+
+
+<!-- =====================================================
+     CART
+===================================================== -->
+
+<div
+class="cart"
+id="cart">
+
+
+<div class="cart-header">
+
+
+<h2>
+
+🛒 My Cart
+
+</h2>
+
+
+<button
+class="close-cart"
+onclick="closeCart()">
+
+✕
+
+</button>
+
+
+</div>
+
+
+
+<div
+id="cartList">
+
+
+<p
+style="
+text-align:center;
+color:#777;
+margin-top:30px;
+">
+
+Your cart is empty.
+
+</p>
+
+
+</div>
+
+
+
+<div class="cart-total">
+
+<span>
+
+Total
+
+</span>
+
+
+<span id="cartTotal">
+
+₹0
+
+</span>
+
+</div>
+
+
+
+<button
+class="whatsapp-order"
+onclick="orderWhatsApp()">
+
+💬 Order On WhatsApp
+
+</button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     FLOATING SOCIAL BUTTONS
+===================================================== -->
+
+<div class="social-buttons">
+
+
+<!-- WHATSAPP -->
+
+<a
+class="social-btn whatsapp"
+href="https://wa.me/91XXXXXXXXXX"
+target="_blank"
+title="WhatsApp">
+
+💬
+
+</a>
+
+
+
+<!-- INSTAGRAM -->
+
+<a
+class="social-btn instagram"
+href="https://instagram.com/YOUR_INSTAGRAM_USERNAME"
+target="_blank"
+title="Instagram">
+
+📷
+
+</a>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+
+<h2>
+
+🛒 Ramraj Kirana Store
+
+</h2>
+
+
+<p>
+
+Your trusted neighborhood grocery store.
+Quality products, reasonable prices and
+friendly service.
+
+</p>
+
+
+<div class="footer-social">
+
+
+<a
+class="footer-wa"
+href="https://wa.me/91XXXXXXXXXX"
+target="_blank">
+
+💬
+
+</a>
+
+
+<a
+class="footer-ig"
+href="https://instagram.com/YOUR_INSTAGRAM_USERNAME"
+target="_blank">
+
+📷
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-column">
+
+
+<h3>
+
+Quick Links
+
+</h3>
+
+
+<a href="#home">
+
+Home
+
+</a>
+
+
+<a href="#categories">
+
+Categories
+
+</a>
+
+
+<a href="#products">
+
+Products
+
+</a>
+
+
+<a href="#offers">
+
+Offers
+
+</a>
+
+
+<a href="#about">
+
+About
+
+</a>
+
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+
+</div>
+
+
+
+<div class="footer-column">
+
+
+<h3>
+
+Categories
+
+</h3>
+
+
+<a href="#products">
+
+Rice & Atta
+
+</a>
+
+
+<a href="#products">
+
+Dal & Pulses
+
+</a>
+
+
+<a href="#products">
+
+Oil & Ghee
+
+</a>
+
+
+<a href="#products">
+
+Masala
+
+</a>
+
+
+<a href="#products">
+
+Snacks
+
+</a>
+
+
+<a href="#products">
+
+Beverages
+
+</a>
+
+
+</div>
+
+
+
+<div class="footer-column">
+
+
+<h3>
+
+Store Contact
+
+</h3>
+
+
+<a href="#contact">
+
+📍 Your Shop Address
+
+</a>
+
+
+<a href="tel:+91XXXXXXXXXX">
+
+📞 +91 9313587349
+
+</a>
+
+
+<a href="mailto:ramrajkirana@gmail.com">
+
+✉️ hardiksinhchudasma71@gmail.com
+
+</a>
+
+
+<a href="#contact">
+
+🕐 7 AM - 10 PM
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+
+© 2026 Ramraj Kirana Store
+|
+All Rights Reserved
+
+
+<br><br>
+
+
+Designed & Created by
+
+<strong>
+
+Yuvi ❤️
+
+</strong>
+
+
+</div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   CART DATA
+===================================================== */
+
+let cart = [];
+
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+function toggleMenu(){
+
+    document
+    .getElementById("nav")
+    .classList
+    .toggle("active");
+
+}
+
+
+
+/* =====================================================
+   ADD TO CART
+===================================================== */
+
+function addToCart(name,price){
+
+
+    let existing =
+    cart.find(
+        item => item.name === name
+    );
+
+
+    if(existing){
+
+        existing.quantity++;
+
+    }
+
+    else{
+
+        cart.push({
+
+            name:name,
+
+            price:price,
+
+            quantity:1
+
+        });
+
+    }
+
+
+    updateCart();
+
+    openCart();
+
+}
+
+
+
+/* =====================================================
+   UPDATE CART
+===================================================== */
+
+function updateCart(){
+
+
+    let list =
+    document
+    .getElementById("cartList");
+
+
+    let count =
+    document
+    .getElementById("cartCount");
+
+
+    let totalElement =
+    document
+    .getElementById("cartTotal");
+
+
+    list.innerHTML="";
+
+
+    let total=0;
+
+    let totalItems=0;
+
+
+
+    if(cart.length===0){
+
+        list.innerHTML=`
+
+        <p style="
+        text-align:center;
+        color:#777;
+        margin-top:30px;">
+
+        Your cart is empty.
+
+        </p>
+
+        `;
+
+    }
+
+
+
+    cart.forEach(
+    (item,index)=>{
+
+
+        let itemTotal =
+        item.price *
+        item.quantity;
+
+
+        total += itemTotal;
+
+
+        totalItems +=
+        item.quantity;
+
+
+
+        list.innerHTML += `
+
+        <div class="cart-item">
+
+
+            <div>
+
+                <h4>
+                ${item.name}
+                </h4>
+
+                <div class="cart-item-price">
+                ₹${item.price}
+                </div>
+
+            </div>
+
+
+
+            <div class="quantity">
+
+
+                <button
+                onclick="changeQuantity(${index},-1)">
+
+                −
+
+                </button>
+
+
+                <span>
+
+                ${item.quantity}
+
+                </span>
+
+
+                <button
+                onclick="changeQuantity(${index},1)">
+
+                +
+
+                </button>
+
+
+            </div>
+
+
+
+            <button
+            class="delete"
+            onclick="removeItem(${index})">
+
+            🗑️
+
+            </button>
+
+
+        </div>
+
+        `;
+
+    });
+
+
+
+    count.innerText =
+    totalItems;
+
+
+    totalElement.innerText =
+    "₹"+total;
+
+}
+
+
+
+/* =====================================================
+   CHANGE QUANTITY
+===================================================== */
+
+function changeQuantity(index,value){
+
+
+    cart[index].quantity +=
+    value;
+
+
+    if(
+        cart[index].quantity <= 0
+    ){
+
+        cart.splice(index,1);
+
+    }
+
+
+    updateCart();
+
+}
+
+
+
+/* =====================================================
+   REMOVE ITEM
+===================================================== */
+
+function removeItem(index){
+
+    cart.splice(index,1);
+
+    updateCart();
+
+}
+
+
+
+/* =====================================================
+   OPEN CART
+===================================================== */
+
+function openCart(){
+
+
+    document
+    .getElementById("cart")
+    .classList
+    .add("active");
+
+
+    document
+    .getElementById("overlay")
+    .classList
+    .add("active");
+
+}
+
+
+
+/* =====================================================
+   CLOSE CART
+===================================================== */
+
+function closeCart(){
+
+
+    document
+    .getElementById("cart")
+    .classList
+    .remove("active");
+
+
+    document
+    .getElementById("overlay")
+    .classList
+    .remove("active");
+
+}
+
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+function searchProducts(){
+
+
+    let input =
+    document
+    .getElementById("search")
+    .value
+    .toLowerCase()
+    .trim();
+
+
+    let products =
+    document
+    .querySelectorAll(".product");
+
+
+    products.forEach(
+    product=>{
+
+
+        let name =
+        product
+        .dataset
+        .name
+        .toLowerCase();
+
+
+        if(
+            name.includes(input)
+        ){
+
+            product.style.display="";
+
+        }
+
+        else{
+
+            product.style.display="none";
+
+        }
+
+    });
+
+}
+
+
+
+/* =====================================================
+   CATEGORY FILTER
+===================================================== */
+
+function filterCategory(category){
+
+
+    let products =
+    document
+    .querySelectorAll(".product");
+
+
+    products.forEach(
+    product=>{
+
+
+        if(
+
+            category === "all"
+
+            ||
+
+            product.dataset.category
+            ===
+            category
+
+        ){
+
+            product.style.display="";
+
+        }
+
+        else{
+
+            product.style.display="none";
+
+        }
+
+    });
+
+
+
+    document
+    .getElementById("products")
+    .scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+}
+
+
+
+/* =====================================================
+   WHATSAPP ORDER
+===================================================== */
+
+function orderWhatsApp(){
+
+
+    if(cart.length===0){
+
+        alert(
+            "Your cart is empty!"
+        );
+
+        return;
+
+    }
+
+
+    let message =
+    "Hello Ramraj Kirana Store! 🛒%0A%0A";
+
+
+    message +=
+    "I want to order:%0A%0A";
+
+
+    let total=0;
+
+
+
+    cart.forEach(item=>{
+
+
+        let itemTotal =
+        item.price *
+        item.quantity;
+
+
+        total += itemTotal;
+
+
+        message +=
+
+        "• " +
+        item.name +
+        " × " +
+        item.quantity +
+        " = ₹" +
+        itemTotal +
+
+        "%0A";
+
+
+    });
+
+
+
+    message +=
+
+    "%0A💰 Total Amount: ₹" +
+    total;
+
+
+    /*
+       IMPORTANT
+       REPLACE THIS NUMBER
+       WITH YOUR REAL WHATSAPP NUMBER
+    */
+
+
+    window.open(
+
+        "https://wa.me/91XXXXXXXXXX?text="
+        +
+        message,
+
+        "_blank"
+
+    );
+
+}
+
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+function sendMessage(){
+
+
+    let name =
+    document
+    .getElementById("customerName")
+    .value;
+
+
+    let phone =
+    document
+    .getElementById("customerPhone")
+    .value;
+
+
+    let message =
+    document
+    .getElementById("customerMessage")
+    .value;
+
+
+
+    if(
+
+        name === ""
+
+        ||
+
+        phone === ""
+
+        ||
+
+        message === ""
+
+    ){
+
+        alert(
+            "Please fill all details."
+        );
+
+        return;
+
+    }
+
+
+
+    let text =
+
+    "Hello Ramraj Kirana Store!%0A%0A"
+
+    +
+
+    "👤 Name: "
+    +
+    name
+
+    +
+
+    "%0A📞 Phone: "
+    +
+    phone
+
+    +
+
+    "%0A💬 Message: "
+    +
+    message;
+
+
+
+    window.open(
+
+        "https://wa.me/91XXXXXXXXXX?text="
+        +
+        text,
+
+        "_blank"
+
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```
